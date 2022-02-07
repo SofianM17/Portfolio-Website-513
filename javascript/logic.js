@@ -1,6 +1,8 @@
 // Code credits: this code was written by Dr. Pavol Federl for the SENG 513 course at the UofC
 // https://codepen.io/pfederl/pen/JEMKwB
 
+// getStats function completed by Sofian Mustafa
+
 
 function getStats(txt) {
     // nChars
