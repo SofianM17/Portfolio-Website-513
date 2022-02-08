@@ -16,6 +16,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 3%;
+  margin-left: 3%;
 }
 
 .nav-cont #main-nav {
@@ -58,13 +59,13 @@
   row-gap: 0.75rem;
 }
 
-.nav-cont #main-nav a {
+.nav-cont #main-nav ul a {
   font-size: medium;
   text-decoration: none;
   color: #1f1f1f;
 }
 
-.nav-cont #main-nav a:hover {
+.nav-cont #main-nav ul a:hover {
   text-decoration: underline;
 }
 

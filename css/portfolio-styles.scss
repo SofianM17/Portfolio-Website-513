@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
-
+// Universal font and scrolling styles for the whole site
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
 
-
+// Styles for header elements
 .nav-cont{
+    // Flex property on header for positioning; header margins
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 3%;
+    margin-left: 3%;
 
+    // Flex property on parent of navigation bar and logo container for positioning
     #main-nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-basis: 95%;
-    
+        
+        // Logo styles 
         #logo{
             margin-left: 3%;
             a{
@@ -33,27 +37,29 @@
             }
         }
         
+        // Styles for navigation links
         ul{
             display: flex;
             flex-wrap: wrap;
             list-style: none;
             column-gap: 1rem;
             row-gap: 0.75rem;
-        }
-        a{
-            font-size: medium;
-            text-decoration: none;
-            color: rgb(31, 31, 31);
 
-            &:hover{
-                text-decoration: underline;
+            a{
+                font-size: medium;
+                text-decoration: none;
+                color: rgb(31, 31, 31);
+    
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
         
     }
 }
 
-
+// Styles for hero section background image on home page
 .sect-cont-1{
     display: flex;
     align-items: center;
@@ -65,6 +71,7 @@
     background-size: cover;
     border-radius: 0.25em;
 
+    // media queries for adjusting hero section margins for various screen sizes
     @media screen and (min-width: 1024px) {
         margin-left: 10%;
         margin-right: 10%;
@@ -79,6 +86,7 @@
     }
 }
 
+// Styles for inner content of hero section on home page
 #sect-1-inner{
     margin-top: 35px;
     margin-left: 10px;
@@ -88,15 +96,18 @@
     flex-direction: column;
     align-items: flex-start;
     
+    // Styles for hero text on home page
     .hero-txt{
         
+        // Font styles for name in hero section
         #hero-intro{
             color:rgb(255, 255, 255);
             font-size:1.2em;
             font-weight:500;
             z-index: 1;
         }
-    
+        
+        // Font styles for tagline in hero section
         h2{
             color: white;
             font-size: 1.75em;
@@ -104,6 +115,7 @@
             z-index: 1;
         }
 
+        // Media query for adjusting hero font sizes based on screen size
         @media screen and (min-width: 768px) {
             #hero-intro{
                 font-size: 1.45em;
@@ -113,7 +125,8 @@
             }
         }
     }
-
+    
+    // Styles for call to action buttons in hero section on home page
     .cta-btn{
         text-decoration: none;
         font-size: medium;
@@ -136,11 +149,14 @@
 
     }
 
+    // Margin between cta buttons
     #btn-2{
         margin-top: 20px;
     }
 }
 
+// Styles for 'My Projects' section on home page
+// Stack project videos in a column using flexbox
 .sect-cont-2{
     margin-left: 3%;
     margin-right: 3%;
@@ -151,6 +167,7 @@
     align-items: center;
     margin-bottom: 40px;
 
+    // Media queries to adjust margins of 'My Projects' section based on screen size
     @media screen and (min-width: 1024px) {
         margin-left: 10%;
         margin-right: 10%;
@@ -166,7 +183,7 @@
     }
     
     
-
+    // styles for videos inside the 'My Projects' section
     #demo-vid{
         margin-bottom: 20px;
         border-radius: 0.25em;
@@ -177,6 +194,7 @@
 
 }
 
+// Style for non-call-to-action buttons (secondary buttons)
 .scndry-btn{
     border-radius: 5px;
     background-color: #0583F2;
@@ -193,6 +211,7 @@
 
 }
 
+// Style for section heading banners on Home Page (i.e. My Projects, Featured App)
 .sect-card{
     background-image: url('/images/projects.jpg');
     height: 100px;
@@ -208,6 +227,8 @@
     border-radius: 0.25em;
 }
 
+// Styles for 'Featured App' section of home page
+// Stack this class's children in a column using flexbox
 .sect-cont-3{
     display: flex;
     flex-direction: column;
@@ -218,6 +239,7 @@
     margin-top: 30px;
     margin-bottom: 40px;
 
+    // Media queries for adjusting margin of Featured App section of Home Page for different screen sizes
     @media screen and (min-width: 1024px) {
         margin-left: 10%;
         margin-right: 10%;
@@ -232,6 +254,7 @@
         font-size: 1em;
     }
 
+    // Styles for featured app description
     p{
         font-size: 0.9em;
         margin-bottom: 20px;
@@ -245,6 +268,7 @@
 
 }
 
+// Introduce flexbox and flex-wrap at large screen sizes for cards on Work Page
 .cards-cont{
     @media screen and (min-width: 1024px) {
         display: flex;
@@ -259,6 +283,8 @@
     }
 }
 
+
+// Styles for 'Work' cards on Work Page.
 .work-card{
     margin-bottom: 40px;
     margin-top: 30px;
@@ -329,6 +355,7 @@
 
 }
 
+// Style for the Page Intro that contains title and page description on Work, Interests, and About page.
 .page-intro{
     text-align: center;
     margin-right: 3%;
@@ -344,6 +371,7 @@
     
 }
 
+// Styles for cards on the Interests page
 .interest-card{
     display: flex;
     flex-direction: column;
@@ -363,6 +391,7 @@
         font-size: 0.9em;
     }
 
+    // Media queries for adjusting card margins for larger screen sizes
     @media screen and (min-width: 768px) {
         margin-left: 20%;
         margin-right: 20%;
@@ -383,6 +412,7 @@
     
 }
 
+// Styles for table on About page
 .skill-table-cont{
     margin-top: 20px;
     width: 95%;
@@ -436,6 +466,7 @@
         width: 100%; 
     }
 
+    // Adjust table width depending on screen size
     @media screen and (min-width: 1024px) {
         width: 80%;
     }
@@ -450,11 +481,13 @@
     
 }
 
+// Styles for description on About Page
 #about-p{
     font-size: 0.9em;
     margin: 0 3% 0 3%;
     padding: 0 10px 0 10px;
 
+    // Adjust description's margins based on screen size
     @media screen and (min-width: 1024px) {
         margin-left: 10%;
         margin-right: 10%;
@@ -471,6 +504,7 @@
     }
 }
 
+// Styles for Contact section on About Page.
 .contact-cont{
     margin: 20px 3% 40px 3%;
     h2{
@@ -480,6 +514,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    // Styles for row containing contact icons
     ul{
         display: flex;
         list-style: none;
@@ -487,6 +523,8 @@
         width: 100%;
         padding-left: 0px;
     }
+
+    // Adjust Contact section's margins based on screen size
     @media screen and (min-width: 1024px) {
         margin-left: 10%;
         margin-right: 10%;
@@ -502,10 +540,13 @@
     }
 }
 
+// Styles for image on the About Page.
 #about-img{
     width: 100%;
     display: flex;
     justify-content: center;
+    
+    // Adjust image size depending on screen sized
     @media screen and (min-width: 1024px) {
         img{
             width: 60%;
@@ -518,6 +559,7 @@
     }   
 }
 
+// Styling for additional space at the bottom of the page
 #footer-space{
     height: 40px;
 }
