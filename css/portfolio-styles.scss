@@ -31,6 +31,7 @@
                 font-size: large;
                 font-weight: bolder;
                 color: rgb(31, 31, 31);
+                text-decoration: none;
                 &:hover{
                     text-decoration: none;
                 }
@@ -64,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/images/hero.jpg');
+    background-image: url('../images/hero.jpg');
     background-repeat: no-repeat;
     margin-left: 3%;
     margin-right: 3%;
@@ -213,7 +214,7 @@
 
 // Style for section heading banners on Home Page (i.e. My Projects, Featured App)
 .sect-card{
-    background-image: url('/images/projects.jpg');
+    background-image: url('../images/projects.jpg');
     height: 100px;
     color: white;
     background-size: cover;

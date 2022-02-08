@@ -41,6 +41,7 @@
   font-size: large;
   font-weight: bolder;
   color: #1f1f1f;
+  text-decoration: none;
 }
 
 .nav-cont #main-nav #logo a:hover {
@@ -79,7 +80,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   margin-left: 3%;
   margin-right: 3%;
@@ -232,7 +233,7 @@
 }
 
 .sect-card {
-  background-image: url("/images/projects.jpg");
+  background-image: url("../images/projects.jpg");
   height: 100px;
   color: white;
   background-size: cover;
